@@ -3,11 +3,10 @@
 % then reproduce, plot and save said vector.
 % Date: 22/08/2015
 filename = 'cut.mp4';
-[soundData,samplingFrec] = audioread(filename);
-[r,c] = size(soundData);
+[soundData,samplingFreq] = audioread(filename);
 soundData = fliplr(soundData')';
-sound(soundData,samplingFrec);
+sound(soundData,samplingFreq);
 plot(soundData);
-audiowrite('cutP7.mp4',soundData,samplingFrec);
+audiowrite('cutP7.mp4',soundData,samplingFreq);
 
 

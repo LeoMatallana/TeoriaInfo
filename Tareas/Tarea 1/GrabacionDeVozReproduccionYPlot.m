@@ -3,7 +3,7 @@
 % Date: 22/08/2015
 recObj = audiorecorder;
 disp('Empezar Grabación...');
-recordblocking(recObj, 15);
+recordblocking(recObj, 5);
 disp('Fin de la Grabación...');
 disp('Inicio de reporducion de la grabacion');
 play(recObj);

@@ -1,0 +1,20 @@
+% el primer armónico o frecuencia fundamental de la señal cuadrada en azul
+t=0:.05:10
+y=(4/pi)*sin(t);
+plot(t,y)
+hold  on
+%%el segundo armonico en verde 
+y=(4/pi)*[sin(3*t)/3];
+hold on 
+plot(t,y,'g')
+%el tercer armonico en ++++
+y=(4/pi)*[sin(5*t)/5];
+hold on 
+plot(t,y,'+')
+%la resultante en rojo,al sumar las armonicas, de la señal cuadrada.
+%siga sumando hasta 10 armonicos y observe que la resultante que se aparece mas
+%a la señal cuadrada
+
+y=(4/pi)*[sin(t)+sin(3*t)/3+sin(5*t)/5];
+plot(t,y,'r')
+ 
